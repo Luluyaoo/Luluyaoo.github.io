@@ -1,0 +1,128 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #5c6357;
+    padding-top: 4rem; /* Space for the fixed header */
+    padding-bottom: 3rem; /* Space for the fixed footer */
+}
+
+header {
+    background-color: #282c34;
+    color: #eff3c4;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure it stays above other content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 2rem; /* Space between image and text */
+    margin-top: 6rem; /* Space to ensure content isn't hidden behind header */
+    justify-content: center; /* Center horizontally */
+    text-align: center; /* Center text */
+}
+
+.intro img {
+    border-radius: 50%; /* Makes the image circular */
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    object-fit: cover; /* Ensures the image maintains aspect ratio */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header h1 a {
+    color: #eff3c4;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #eff3c4;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #4fa3b7;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    background: #fefcf7;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+section {
+    
+    margin-left: 5rem; 
+    margin-right: 5rem; 
+    margin-bottom: 2rem;
+}
+
+h2, h3 {
+    color: #282c34;
+}
+
+footer {
+    background-color: #282c34;
+    color: #eff3c4;
+    padding: 1rem 2rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+footer p {
+    margin: 0;
+}
+
+a {
+    color: #9ba992;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #424d43;
+}
+
+section p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
